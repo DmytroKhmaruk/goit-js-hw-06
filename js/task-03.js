@@ -15,8 +15,8 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 const markup = images.reduce((acc, image) => `${acc}
-  <li>
-    <img src="${image.url}" alt="${image.alt}" />
+  <li class="gallery__item">
+    <img class="gallery__image" src="${image.url}" alt="${image.alt}" />
   </li>
 `, '');
 
